@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 
 # Start time and end time
-start_time = datetime(2024, 10, 11, 14, 50)  # Starting at 2:50 PM EST today
-end_time = datetime(2024, 10, 15, 17, 0)     # Ending at 5:00 PM EST Tuesday
+start_time = datetime(2024, 10, 11, 00, 00)  # Starting at 2:50 PM EST today
+end_time = datetime(2024, 10, 15, 11, 59)     # Ending at 5:00 PM EST Tuesday
 
 # Parameters that stay the same across all observations
 channels = 300
@@ -16,7 +16,7 @@ max_hif = 2000000000  # 2 GHz
 min_lof = 1000000000  # 1 GHz
 
 # Generate file
-with open("rss_schedule_1ghz.skd", "w") as f:
+with open("test", "w") as f:
     # Add the 'daily' keyword
     f.write("daily\n")
 
