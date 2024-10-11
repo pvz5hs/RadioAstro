@@ -16,7 +16,7 @@ max_hif = 2000000000  # 2 GHz
 min_lof = 1000000000  # 1 GHz
 
 # Generate file
-with open("rss_schedule_1ghz_2ghz.skd", "w") as f:
+with open("rss_schedule_1ghz.skd", "w") as f:
     # Add the 'daily' keyword
     f.write("daily\n")
 
@@ -34,7 +34,7 @@ with open("rss_schedule_1ghz_2ghz.skd", "w") as f:
         f.write(f"LOF={lof};\n")
         f.write(f"HIF={hif};\n")
         f.write(f"stop={stop_time.strftime('%H:%M:%S')};\n")
-        f.write("\n")  # Add a newline between observations
+        #f.write("\n")  # Add a newline between observations
 
         # Update times and frequencies for the next observation
         current_time = stop_time + pause_between_observations
