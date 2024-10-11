@@ -2,7 +2,7 @@ from datetime import datetime, timedelta
 
 # Start time and end time
 start_time = datetime(2024, 10, 11, 00, 00)  # Starting at 2:50 PM EST today
-end_time = datetime(2024, 10, 11, 11, 59)     # Ending at 5:00 PM EST Tuesday
+end_time = datetime(2024, 10, 11, 23, 59)     # Ending at 5:00 PM EST Tuesday
 
 # Parameters that stay the same across all observations
 channels = 300
@@ -16,7 +16,7 @@ max_hif = 2000000000  # 2 GHz
 min_lof = 1000000000  # 1 GHz
 
 # Generate file
-with open("test1.skd", "w") as f:
+with open("test3.skd", "w") as f:
     # Add the 'daily' keyword
     f.write("daily\n")
 
