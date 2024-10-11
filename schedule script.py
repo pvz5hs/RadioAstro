@@ -16,7 +16,7 @@ max_hif = 2000000000  # 2 GHz
 min_lof = 1000000000  # 1 GHz
 
 # Generate file
-with open("test", "w") as f:
+with open("test.skd", "w") as f:
     # Add the 'daily' keyword
     f.write("daily\n")
 
