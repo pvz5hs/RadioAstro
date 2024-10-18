@@ -1,0 +1,4 @@
+cd /Users/andrey/Desktop/RadioAstro
+python3 -m venv myenv --system-site-packages
+source myenv/bin/activate
+deactivate

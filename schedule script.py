@@ -1,23 +1,21 @@
 from datetime import datetime, timedelta
 
-# Start time and end time
+# start time and end tiem
 start_time = datetime(2024, 10, 11, 00, 00)  # Starting at 2:50 PM EST today
 end_time = datetime(2024, 10, 11, 23, 59)     # Ending at 5:00 PM EST Tuesday
 
-# Parameters that stay the same across all observations
+# parameters that stay
 channels = 300
 offset = 175
 colorgain = 1.0
-observation_duration = timedelta(minutes=5)
+observation_duration = timedelta(minutes=30)
 pause_between_observations = timedelta(seconds=10)
 
 # Maximum frequency for RSP1A
 max_hif = 2000000000  # 2 GHz
 min_lof = 1000000000  # 1 GHz
 
-# Generate file
-with open("test3.skd", "w") as f:
-    # Add the 'daily' keyword
+with open("overnight.skd", "w") as f:
     f.write("daily\n")
 
     current_time = start_time
@@ -37,7 +35,7 @@ with open("test3.skd", "w") as f:
         #f.write("\n")  # Add a newline between observations
 
         # Update times and frequencies for the next observation
-        current_time = stop_time + pause_between_observations
+        current_time = stop_time
         lof += 10000000  # Increase LOF by 10 MHz
         hif += 10000000  # Increase HIF by 10 MHz
 
