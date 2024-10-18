@@ -328,10 +328,4 @@ colorgain=1.0;
 LOF=1460000000;
 HIF=1470000000;
 stop=23:37:40;
-start=23:37:50;
-channels=300;
-offset=175;
-colorgain=1.0;
-LOF=1470000000;
-HIF=1480000000;
-stop=00:07:50;
+
